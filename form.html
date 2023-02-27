@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Form</title>
+    <style>
+        form{
+            color: black;
+            background-color: darkturquoise
+        }
+        h1{
+            text-align: center;
+            margin: auto;
+        }
+        input{
+            padding: 5px;
+            margin: 10px;
+        }
+        body{
+            background-color: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Recruitment Form</h1>
+    <hr>
+    <label for="username">UserName:</label>
+    <input type="text" placeholder="username"><br>
+    <label for="email">Email Id:</label>
+    <input type="text" placeholder="Email"><br>
+    <label for="contact">Contact:</label>
+    <input type="text" placeholder="Contact"><br>
+    <label for="DOB">Date Of Birth:</label>
+    <input type="date" id="birth" name="birth date"><br>
+    <label for="job role">Job Role:</label>
+    <input type="text" placeholder="Job Role"><br>
+    <input type="radio" id="male" name="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="female">
+    <label for="female">Female</label><br>
+    <label for="salary exception">Salary Exception:</label>
+    <input type="text" placeholder="salary exception"><br>
+    <label for="place">Place:</label>
+    <select name="place" id="place">
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Mohali">Mohali</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Noida">Noida</option>
+        <option value="faridabad">Faridabad</option>
+        <option value="gurgaon">Gurgaon</option>
+        <option value="chenai">Chenai</option>
+        <option value="bengaluru">Bengaluru</option>
+        <option value="pune">Pune</option>
+    </select><br>
+    <label for="myfile">Myfile:</label>
+    <input type="file" id="myfile" name="myfile">
+    <br><br>
+    <fieldset>
+        <legend>Search</legend>
+        <label for="prefered location">JOB loaction</label><br>
+        <input type="text" list="prefered location" placeholder="prefered location"><br>
+        <datalist id="prefered location">
+            <option value="Chandigarh"></option>
+            <option value="Delhi"></option>
+            <option value="New Delhi"></option>
+            <option value="Gurgaon"></option>
+            <option value="Mohali"></option>
+            <option value="Noida"></option>
+        </datalist>
+    </fieldset>
+    <input type="submit"><br>
+    </form>
+</body>
+</html>
